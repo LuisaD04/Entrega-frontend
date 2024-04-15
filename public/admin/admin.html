@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado */
+        .border-line {
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .table-gray {
+            background-color: #f8f9fa; /* Color gris */
+        }
+    </style>
+</head>
+<body>
+    <!-- Incluir la barra de navegación -->
+    <div>
+        <!-- Incluir la barra de navegación -->
+        <object type="text/html" data="../navbar/navbar.html" style="width:100%;"></object>
+
+        <!-- Contenido de la página de administrador -->
+    </div>
+
+    <div class="">
+        <!-- Título centrado -->
+        <div class="text-center mb-3">
+            <h2>CRUD ADMIN</h2>
+        </div>
+        <!-- Línea -->
+        <div class="border-line"></div>
+        <!-- Botón pegado a la derecha con margen -->
+        <div class="text-end mb-3 container">
+            <button class="btn btn-primary">Nuevo registro</button>
+        </div>
+        <!-- Tabla centrada horizontalmente -->
+        <div class="table-responsive container">
+            <table class="table table-light table-striped table-bordered text-center table-gray">
+                <thead>
+                    <tr>
+                        <th>Nu°</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>1234567890</td>
+                        <td>Activo</td>
+                        <td><button class="btn btn-warning"><i class="bi bi-pencil"></i></button></td>
+                        <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./admin.js"></script>
+    <!-- Incluir el pie de página -->
+    <div>
+        <!-- Incluir el pie de página -->
+        <object type="text/html" data="../footer/footer.html" style="width:100%;"></object>
+    </div>
+</body>
+</html>
