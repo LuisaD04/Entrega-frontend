@@ -1,4 +1,125 @@
+<style>
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 150px; /* Ajusta el tamaño de la imagen (ancho) */
+    height: 100px; /* Ajusta el tamaño de la imagen (alto) */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.image-container p {
+    margin: 0;
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    color: #f0f0f0;
+}
+
+.descripcion-container {
+    max-width: 300px; /* Ancho máximo del contenedor de la descripcion*/
+    margin-left: 10px;
+}
+
+.descripcion-container p{
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    color: #f0f0f0;
+}
+
+
+.redes-container {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.redes-container img {
+    width: 20px; /* Ajusta el tamaño de la imagen (ancho) */
+    height: 20px; /* Ajusta el tamaño de la imagen (alto) */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.redes-container a {
+    
+    text-decoration: none;
+    color: #ffffff; /* Color del texto de los enlaces */
+    display: flex;
+    
+}
+.redes-container span {
+    margin-left: 5px; /* Espacio entre el texto y el icono */
+}
+
+.terminos-container {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.terminos-container a {
+    
+    text-decoration: none;
+    color: #ffffff; /* Color del texto de los enlaces */
+    display: flex;
+    margin-bottom: 15px;
+    
+}
+
+</style>
+
 <!-- footer.html -->
-<footer style="background-color: blue; height: 100px;">
+<footer style="background-color: #267BA9; height: 100px;">
     <!-- Contenido del pie de página -->
+    <div class="footer-section">
+        <div class="image-container">
+            <img src="../Img/logo.png" alt="Descripción de la imagen">
+            <p>Copyright 2024</p>
+        </div>
+        <div class="descripcion-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentu</p>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="redes-container">
+            <a href="#">
+                <img src="../Img/facebook.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+            <a href="#">
+                <img src="../Img/Instagram.webp" alt="Instagram"> 
+                <span>Instagram</span>
+            </a>
+            <a href="#">
+                <img src="../Img/twitter.webp" alt="Twitter">
+                <span>Twitter</span>
+            </a>
+            <a href="#">
+                <img src="../Img/Tiktok.png" alt="TikTok">
+                <span>TikTok</span>
+            </a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="terminos-container">
+            <a href="#">Condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Contactanos</a>
+        </div>
+    </div>
 </footer>
