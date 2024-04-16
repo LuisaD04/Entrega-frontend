@@ -1,0 +1,31 @@
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+    
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+.logo{
+    width: 310px;
+    padding-top: 10px;
+}
+
+.logoimage{
+    margin-left: 220px;
+    max-width: 600px;
+}
+
+.form{
+    margin-left: 98px;
+    padding-top: 30px;
+}
+
+.fondo{
+    background-color: #9DC4D8;
+}
