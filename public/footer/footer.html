@@ -1,15 +1,20 @@
 <style>
-
+body{
+    overflow: hidden;
+}
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    background-color: rgb(38 123 169 / 69%);
+    padding: 0 50px;
+    height: 200px;
 }
 
 .footer-section {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .image-container {
@@ -19,9 +24,8 @@ footer {
 }
 
 .image-container img {
-    width: 150px; /* Ajusta el tamaño de la imagen (ancho) */
     height: 100px; /* Ajusta el tamaño de la imagen (alto) */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    object-fit: cover;
 }
 
 .image-container p {
@@ -44,14 +48,13 @@ footer {
 .redes-container {
     display: flex;
     flex-direction: column;
-    display: inline-block;
     vertical-align: middle;
+    gap: 10px;
 }
 
 .redes-container img {
     width: 20px; /* Ajusta el tamaño de la imagen (ancho) */
     height: 20px; /* Ajusta el tamaño de la imagen (alto) */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
 .redes-container a {
@@ -68,23 +71,56 @@ footer {
 .terminos-container {
     display: flex;
     flex-direction: column;
-    display: inline-block;
     vertical-align: middle;
+    gap: 15px;
 }
 
 .terminos-container a {
-    
     text-decoration: none;
     color: #ffffff; /* Color del texto de los enlaces */
     display: flex;
-    margin-bottom: 15px;
-    
 }
 
-</style>
+@media (max-width: 700px) {
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    .footer-section{
+        gap: 0;
+    }
+
+    .descripcion-container{
+        margin: 0;
+        max-width: none;
+    }
+
+    .descripcion-container p{
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .redes-container{
+        flex-direction: row;
+    }
+
+    .redes-container span{
+        display: none;
+    }
+
+    .terminos-container{
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .image-container img{
+        height: 80px;
+    }
+}
+</style>
 <!-- footer.html -->
-<footer style="background-color: #267BA9; height: 90px;">
+<footer>
     <!-- Contenido del pie de página -->
     <div class="footer-section">
         <div class="image-container">
@@ -102,7 +138,7 @@ footer {
                 <span>Facebook</span>
             </a>
             <a href="#">
-                <img src="../Img/Instagram.webp" alt="Instagram"> 
+                <img src="../Img/Instagram.webp" alt="Instagram">
                 <span>Instagram</span>
             </a>
             <a href="#">
