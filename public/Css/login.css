@@ -17,13 +17,14 @@
 }
 
 .logoimage{
-    margin-left: 220px;
-    max-width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .form{
-    margin-left: 98px;
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .fondo{
