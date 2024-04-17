@@ -22,3 +22,7 @@
 .text-user {
     font-size: 14px;
 }
+
+#content-cards img{
+    height: 150px;
+}
