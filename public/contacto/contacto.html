@@ -20,9 +20,12 @@
     border: solid 1px;
     padding: 10px;
     border-radius: 12px;
+    border-color: rgb(36 58 105 / 42%);
  }
  #button_contac{
   align-items: center;
+  background: #267BA9;
+  border-color: #267BA9;
  }
 </style>
 </head>
@@ -33,28 +36,29 @@
 
     <!-- Contenido de la página de administrador -->
 </div>
-<div class="container-xl" id ="contenedor">
+<div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id ="contenedor">
     <form>
         <fieldset>
             <div class="mb-3" style="display: flex; justify-content: center;">
                 <img src="../img/logo.png" alt="">
             </div>
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Disabled input" style="width: 49%; display: inline-block;">
-            <input type="text" class="form-control" placeholder="Disabled input" style="width: 50%; display: inline-block;">
+            <input type="text" class="form-control" placeholder="Nombre" style="width: 49%; display: inline-block;">
+            <input type="text" class="form-control" placeholder="Apellido" style="width: 50%; display: inline-block;">
           </div>
           <div class="mb-3">
             <select id="disabledSelect" class="form-select">
-              <option>Selector</option>
+              <option>Selecciona el servicio de tu interes</option>
+              <option>...</option>
             </select>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Disabled input" style="width: 50%; display: inline-block;">
-            <input type="text" class="form-control" placeholder="Disabled input" style="width: 49%; display: inline-block;">
+            <input type="text" class="form-control" placeholder="Telefono" style="width: 50%; display: inline-block;">
+            <input type="text" class="form-control" placeholder="Email" style="width: 49%; display: inline-block;">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder=""></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describenos tu necesidad"></textarea>
           </div>
           <div class="mb-3">
             <div class="form-check">
@@ -65,14 +69,14 @@
             </div>
           </div>
           <div style="display: flex; justify-content: center;">
-              <button type="submit" class="btn btn-primary" id="button_contac" style="margin-bottom: 15px;">Registrarce</button>
+              <button type="submit" class="btn btn-primary" id="button_contac" style="margin-bottom: 15px;">Registrarse</button>
           </div>
         </fieldset>
       </form>
 </div>
 <div id="footer-container">
-    <!-- Incluir el pie de página
-    <object type="text/html" data="../footer/footer.html" style="width:100%;"></object> -->
+    <!-- Incluir el pie de página -->
+    <object type="text/html" data="../footer/footer.html" style="width:100%; height: 200px;"></object>
 </div>
 </body>
 </html>
