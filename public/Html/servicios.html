@@ -13,11 +13,19 @@
             crossorigin="anonymous"
         >
         <title>Servicios | Software Tecnology</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('#navbar-container').load('../navbar/navbar.html');
+            $('#footer-container').load('../footer/footer.html');
+        });
+        </script>
     </head>
     <body>
-        <div>
-            <!-- Incluir la barra de navegación -->
-            <object type="text/html" data="../navbar/navbar.html" style="width:100%;"></object>
+        <div id="navbar-container">
+            <!-- Incluir la barra de navegación
+            <object type="text/html" data="../navbar/navbar.html" style="width:100%;"></object> -->
     
             <!-- Contenido de la página de administrador -->
         </div>
@@ -138,9 +146,9 @@
                 </div>
             </div>
         </div>
-        <div>
-            <!-- Incluir el pie de página -->
-            <object type="text/html" data="../footer/footer.html" style="width:100%; height: 200px;"></object>
+        <div id="footer-container" >
+            <!-- Incluir el pie de página 
+            <object type="text/html" data="../footer/footer.html" style="width:100%; height: 200px;"></object>-->
         </div>
     </body>
 </html>

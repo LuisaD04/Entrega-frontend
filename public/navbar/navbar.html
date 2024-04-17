@@ -1,3 +1,69 @@
-<nav style="background-color: blue; height: 50px;">
-    <!-- Contenido de la barra de navegación -->
+<style>
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9; /* Color azul turquesa */
+    padding: 20px;
+}
+
+.logo-container img {
+    width: 50px; /* Ajusta el tamaño de la imagen del logo */
+}
+
+.button-container {
+    display: flex;
+}
+
+.nav-button {
+    background-color: #479cca; /* Color azul turquesa más oscuro */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.nav-button:first-child {
+    margin-left: 0;
+}
+
+.login-container {
+    margin-left: auto;
+}
+
+.login-button {
+    background-color: #479cca; /* Color azul turquesa más oscuro */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.login-button:hover {
+    background-color: #267BA9; /* Cambia el color al pasar el mouse */
+}
+
+</style>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<nav class="navbar">
+
+    <div class="logo-container">
+        <img src="../Img/shorcut.png" alt="Logo">
+    </div>
+
+    <div class="button-container">
+        <a href="../Html/servicios.html" class="nav-button">Servicios</a>
+        <a href="../contacto/testimonio.html" class="nav-button">Testimonios</a>
+        <a href="../contacto/contacto.html" class="nav-button">Contactenos</a>
+        <a href="../admin/admin.html" class="nav-button">Administrador</a>
+    </div>
+
+    <div class="login-container">
+        <a href="../login/login.html" class="login-button">Iniciar sesión</a>
+    </div>
 </nav>
