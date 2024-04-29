@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../Img/shorcut.png">
         <link rel="stylesheet" href="../Css/style.css">
-        <link rel="stylesheet" href="../Css/servicios.css">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -13,7 +12,7 @@
             crossorigin="anonymous"
         >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <title>Diseño web | Software Tecnology</title>
+        <title>Descripcióm de servicios | Software Tecnology</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
         $(document).ready(function() {
@@ -22,61 +21,26 @@
         });
         </script>
     </head>
-    <body>
+    <body id="content-services">
         <div id="navbar-container">
             <!-- Incluir la barra de navegación 
             <object type="text/html" data="../navbar/navbar.html" style="width:100%;"></object>-->
-    
-            <!-- Contenido de la página de administrador -->
-        </div>
+            <!-- Contenido de la página de administrador --></div>
         <div class="content-body p-4 mx-auto">
             <div class="content-services">
                 <div class="row">
                     <div id="content-cards" class="col-12 col-lg-9 mt-0">
-                        <h1 class="fw-bold fs-3">Diseño web</h1>
+                        <h1 class="fw-bold fs-3">${servicio.title}</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.
+                            ${servicio.description}
                         </p>
                         <h2 class="fs-4 mb-4 mt-4">Caracteristicas</h2>
-                        <div class="content-features row">
-                            <div class="col-12 col-md-5">
-                                <ul>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                    <li>
-                                        Tristique convallis vehicula ornare, urna quam maecenas.
-                                    </li>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                    <li>
-                                        Tristique convallis vehicula ornare, urna quam maecenas.
-                                    </li>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-5">
-                                <ul>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                    <li>
-                                        Tristique convallis vehicula ornare, urna quam maecenas.
-                                    </li>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                    <li>
-                                        Tristique convallis vehicula ornare, urna quam maecenas.
-                                    </li>
-                                    <li>
-                                        Lorem ipsum dolor sit, amet consectetur. consectetur.
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="content-features">
+                            <ul class="row">
+                                <li class="col-12 col-md-5 ml-2" v-for="feature in servicio.feature">
+                                   - ${feature}
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="content-rigth-cards col-12 col-lg-3 mt-4">
@@ -86,32 +50,11 @@
                                 <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a>
                             </span>
                             <div class="content-testimonials">
-                                <div class="d-flex mb-2">
+                                <div class="d-flex mb-2" v-for="item in testimonios">
                                     <img src="../Img/icon_user.svg" alt="icono usuario" width="22px">
                                     <span class="d-flex flex-column fw-bold ms-2 text-user">
-                                        Cargo
-                                        <span class="fw-light lh-1">Lorem ipsum dolor sit, consectetur...</span>
-                                    </span>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <img src="../Img/icon_user.svg" alt="icono usuario" width="22px">
-                                    <span class="d-flex flex-column fw-bold ms-2 text-user">
-                                        Cargo
-                                        <span class="fw-light lh-1">Lorem ipsum dolor sit, consectetur...</span>
-                                    </span>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <img src="../Img/icon_user.svg" alt="icono usuario" width="22px">
-                                    <span class="d-flex flex-column fw-bold ms-2 text-user">
-                                        Cargo
-                                        <span class="fw-light lh-1">Lorem ipsum dolor sit, consectetur...</span>
-                                    </span>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <img src="../Img/icon_user.svg" alt="icono usuario" width="22px">
-                                    <span class="d-flex flex-column fw-bold ms-2 text-user">
-                                        Cargo
-                                        <span class="fw-light lh-1">Lorem ipsum dolor sit, consectetur...</span>
+                                        ${item.name}
+                                        <span class="fw-light lh-1">${item.comentario}</span>
                                     </span>
                                 </div>
                             </div>
@@ -119,62 +62,29 @@
                         <div class="border shadow rounded pt-2 p-3 mb-2">
                             <span class="subtitle d-flex fw-bold fs-6 mb-1">Imágenes</span>
                             <div class="row row-cols-1 row-cols-md-2 g-2">
-                                <div class="col">
-                                    <div
-                                        class="card"
-                                        type="button"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modal_gallery"
-                                    >
-                                        <img src="../Img/servicios/Diseño/diseño1.jpg" class="card-img-top" alt="imagen diseño">
+                                <template v-for="(img,key) in servicio.image" :key="img.id">
+                                    <div class="col" v-if="key < 4">
+                                        <div
+                                            class="card"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modal_gallery"
+                                        >
+                                            <img :src="img" class="card-img-top" alt="imagen diseño">
+                                        </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="col"
-                                    type="button"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modal_gallery"
-                                >
-                                    <div class="card">
-                                        <img src="../Img/servicios/Diseño/diseño2.jpg" class="card-img-top" alt="imagen diseño">
-                                    </div>
-                                </div>
-                                <div
-                                    class="col"
-                                    type="button"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modal_gallery"
-                                >
-                                    <div class="card">
-                                        <img src="../Img/servicios/Diseño/diseño3.jpg" class="card-img-top" alt="imagen diseño">
-                                    </div>
-                                </div>
-                                <div
-                                    class="col"
-                                    type="button"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modal_gallery"
-                                >
-                                    <div class="card">
-                                        <img src="../Img/servicios/Diseño/diseño4.jpg" class="card-img-top" alt="imagen diseño">
-                                    </div>
-                                </div>
+                                </template>
                             </div>
                             <div
                                 class="card mt-2"
                                 type="button"
                                 data-bs-toggle="modal"
-                                data-bs-target="#modal_gallery"
+                                data-bs-target="#modal_gallery" style="
+                                height: 40px;"
                             >
-                                <img
-                                    src="../Img/servicios/Diseño/diseño5.jpg"
-                                    class="card-img object-fit-cover opacity-25"
-                                    alt="imagen diseño"
-                                    height="50px"
-                                >
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                                     <p class="card-text fw-bold">
-                                        <small>+ 4 Imágenes</small>
+                                        <small>${moreImage}</small>
                                     </p>
                                 </div>
                             </div>
@@ -184,8 +94,6 @@
             </div>
         </div>
         <!-- Fin content services -->
-        <!-- Footer -->
-        <!-- Fin Footer -->
         <!-- Modal -->
         <div
             class="modal fade"
@@ -209,51 +117,24 @@
                         <div id="carouselExampleIndicators" class="carousel slide">
                             <div class="carousel-indicators">
                                 <button
+                                    v-for="(img,key) in servicio.image"
                                     type="button"
+                                    :class="{ 'active': key == 0 }"
                                     data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="0"
-                                    class="active"
-                                    aria-current="true"
-                                    aria-label="Slide 1"
-                                ></button>
-                                <button
-                                    type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="1"
-                                    aria-label="Slide 2"
-                                ></button>
-                                <button
-                                    type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="2"
-                                    aria-label="Slide 3"
+                                    :data-bs-slide-to="key"
                                 ></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img
-                                        src="../Img/servicios/Diseño/diseño1.jpg"
-                                        height="300px"
-                                        class="d-block w-100 object-fit-cover"
-                                        alt="imagen slider diseño"
-                                    >
-                                </div>
-                                <div class="carousel-item">
-                                    <img
-                                        src="../Img/servicios/Diseño/diseño2.jpg"
-                                        height="300px"
-                                        class="d-block w-100 object-fit-cover"
-                                        alt="imagen slider diseño"
-                                    >
-                                </div>
-                                <div class="carousel-item">
-                                    <img
-                                        src="../Img/servicios/Diseño/diseño3.jpg"
-                                        height="300px"
-                                        class="d-block w-100 object-fit-cover"
-                                        alt="imagen slider diseño"
-                                    >
-                                </div>
+                                <template v-for="(img,key) in servicio.image">
+                                    <div :class="[ key == 0 ? 'active carousel-item' : 'carousel-item ']">
+                                        <img
+                                            :src="img"
+                                            height="300px"
+                                            class="d-block w-100 object-fit-cover"
+                                            alt="imagen slider diseño"
+                                        >
+                                    </div>
+                                </template>
                             </div>
                             <button
                                 class="carousel-control-prev"
@@ -278,11 +159,10 @@
                 </div>
             </div>
         </div>
-
-        <div id="footer-container" >
+        <div id="footer-container">
             <!-- Incluir el pie de página 
-            <object type="text/html" data="../footer/footer.html" style="width:100%; height: 200px;"></object>-->
-        </div>
-
+            <object type="text/html" data="../footer/footer.html" style="width:100%; height: 200px;"></object>--></div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="/servicios.js"></script>
     </body>
 </html>
