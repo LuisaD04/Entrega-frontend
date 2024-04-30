@@ -1,41 +1,19 @@
 let tbody = document.getElementById("tbody")
 
 
+
+
 // fetch function
 fetch("http://localhost:3000/users")
     .then(res => res.json())
     .then(json => {
         json.map(data => {
-            console.log(data)
             tbody.append(td_fun(data));
         })
     })
 
 // create td
-function td_fun({ id, name, email, phone, state}){
-    let td = document.createElement('tr');
-    td.innerHTML = `
-                        <td>${id}</td>
-                        <td>${name}</td>
-                        <td>${email}</td>
-                        <td>${phone}</td>
-                        <td>${state}</td>
-                        <td><button class="btn-editar btn btn-warning"><i class="bi bi-pencil"></i></button></td>
-                        <td><button class="btn-delete btn btn-danger"><i class="bi bi-trash"></i></button></td>
-    `;
 
-	const btnEditar = td.querySelector('.btn-editar');
-    btnEditar.addEventListener('click', () => {
-        // Aquí puedes abrir el modal o realizar cualquier otra acción que necesites
-        toggleModal(); // Suponiendo que openModal es la función que abre tu modal
-    });
-
-	const btnDelete = td.querySelector('.btn-delete');
-    btnDelete.addEventListener('click', () => {
-        openModalDelete(); // Suponiendo que openModalDelete es la función que abre tu modal de eliminación
-    });
-    return td;
-}
 
 
 const modal = document.querySelector('.main-modal');
@@ -118,7 +96,6 @@ function openModalDelete() {
 
 
 for (let i = 0; i < closeButtonDelete.length; i++) {
-	console.log("X de eliminar registro")
 	const elements = closeButtonDelete[i];
 	elements.onclick = (e) => modalCloseDelete();
 	modalDelete.style.display = 'none';

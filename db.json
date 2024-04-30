@@ -1,7 +1,7 @@
 {
   "registros_servicios": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Nombre prueba",
       "last_name": "Apellido prueba",
       "email": "prueba@correo.com",
@@ -10,7 +10,7 @@
   ],
   "servicios": [
     {
-      "id": 1,
+      "id": "1",
       "url": "/servicio/diseno-web",
       "title": "Diseño Web",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": "1",
       "url": "/servicio/diseno-web",
       "title": "Diseño Web",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "url": "/servicio/prototipos",
       "title": "Creación de prototipos funcionales",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "url": "/servicio/desarrollo-proyectos",
       "title": "Desarrollo de proyectos",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "url": "/servicio/levantamiento-informacion",
       "title": "Levantamiento de información",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "url": "/servicio/analisis-datos",
       "title": "Analisis de datos",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "url": "/servicio/estudio-proyectos",
       "title": "Estudio de proyectos",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, vulputate venenatis porttitor tristique condimentum vivamus dictumst sociis, mollis suspendisse sem nam scelerisque ligula. Mus netus porttitor interdum non porta eget nibh nisi morbi tortor ad iaculis ante lacus, aliquet libero congue phasellus ut neque nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci, lectus mauris venenatis pulvinar torquent diam, ultricies nam metus dignissim posuere iaculis nam magna cum sem sagittis sapien. Montes magnis risus lacus vivamus ligula egestas orci.",
@@ -173,25 +173,25 @@
   ],
   "testimonios": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Daniel Hernandez",
       "comentario": "El servicio ofrecido es ",
       "servicio": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Daniel Hernandez",
       "comentario": "El servicio ofrecido es ",
       "servicio": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Daniel Hernandez",
       "comentario": "El servicio ofrecido es ",
       "servicio": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Daniel Hernandez",
       "comentario": "El servicio ofrecido es ",
       "servicio": 1
@@ -199,45 +199,59 @@
   ],
   "users": [
     {
-      "id": 1,
       "name": "Daniel Hernandez",
       "email": "daniel@example.com",
       "phone": "1234567890",
-      "state": "Activo"
+      "state": "Activo",
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Ana López",
       "email": "ana@example.com",
       "phone": "9876543210",
       "state": "Activo"
     },
     {
-      "id": 3,
       "name": "Juan García",
-      "email": "juan@example.com",
+      "email": "juanNuevo@example.com",
       "phone": "5555555555",
-      "state": "Inactivo"
+      "state": "Activo",
+      "id": "3"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "María Rodríguez",
       "email": "maria@example.com",
       "phone": "1111111111",
       "state": "Activo"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Pedro Martínez",
       "email": "pedro@example.com",
       "phone": "2222222222",
       "state": "Inactivo"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Sofía Pérez",
       "email": "sofia@example.com",
       "phone": "3333333333",
+      "state": "Activo"
+    },
+    {
+      "id": "cf3e",
+      "name": "Hugo Gabriel Salcedo Silva",
+      "email": "Hugo@example.com",
+      "phone": "1112223333",
+      "state": "Activo"
+    },
+    {
+      "id": "5d66",
+      "name": "Hugo Gabriel Salcedo Silva",
+      "email": "hsalcedo@poligran.edu.co",
+      "phone": "3043511884",
       "state": "Activo"
     }
   ]
