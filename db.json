@@ -227,31 +227,17 @@
       "state": "Activo"
     },
     {
-      "id": "5",
-      "name": "Pedro Martínez",
-      "email": "pedro@example.com",
-      "phone": "2222222222",
-      "state": "Inactivo"
+      "name": "Pedro Martínez actualizado",
+      "email": "pedroNuevo@example.com",
+      "phone": "1111111111",
+      "state": "Activo",
+      "id": "5"
     },
     {
       "id": "6",
       "name": "Sofía Pérez",
       "email": "sofia@example.com",
       "phone": "3333333333",
-      "state": "Activo"
-    },
-    {
-      "id": "cf3e",
-      "name": "Hugo Gabriel Salcedo Silva",
-      "email": "Hugo@example.com",
-      "phone": "1112223333",
-      "state": "Activo"
-    },
-    {
-      "id": "5d66",
-      "name": "Hugo Gabriel Salcedo Silva",
-      "email": "hsalcedo@poligran.edu.co",
-      "phone": "3043511884",
       "state": "Activo"
     }
   ]

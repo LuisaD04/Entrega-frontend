@@ -359,7 +359,6 @@
         //Create - POST
         try {
           console.log("Nuevo formulario");
-          console.log(e.target.id.value);
           let options = {
             method: "POST",
             headers: {
@@ -377,7 +376,7 @@
 
           if (!res.ok) throw { status: res.status, statusText: res.statusText };
 
-          
+          location.reload();
         } catch (err) {
           let message = err.statusText || "Ocurrió un error";
           $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
