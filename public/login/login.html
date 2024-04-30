@@ -32,7 +32,7 @@
     
             <div class="form">
     
-              <form style="width: 35rem;">
+              <form style="width: 35rem;" id="login">
     
                 <div class="text-center">
                   <h3 class="fw-normal mb-0 pb-2" style="letter-spacing: 1px;">Iniciar Sesión</h3>
@@ -41,14 +41,14 @@
               
     
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <label class="form-label" for="form2Example18">Email</label>
-                  <input type="email" id="form2Example18" class="form-control form-control-lg" placeholder="Correo Electrónico"/>
+                  <label class="form-label" for="email">Email</label>
+                  <input type="email" id="email" class="form-control form-control-lg" placeholder="Correo Electrónico"/>
                   
                 </div>
     
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <label class="form-label" for="form2Example28">Contraseña</label>
-                  <input type="password" id="form2Example28" class="form-control form-control-lg" placeholder="Contraseña"/>
+                  <label class="form-label" for="password">Contraseña</label>
+                  <input type="password" id="password" class="form-control form-control-lg" placeholder="Contraseña"/>
                   
                 </div>
                 
@@ -61,12 +61,12 @@
               </div>
     
               <div class="pt-2 mb-4">
-                <a href="../index.html" class="btn btn-info btn-lg btn-block w-100" role="button">Login</a>
+                <button class="btn btn-info btn-lg btn-block w-100" type="submit">Login</button>
               </div>
     
-                
-    
+            
               </form>
+              <script src="login.js"></script>
     
             </div>
     
