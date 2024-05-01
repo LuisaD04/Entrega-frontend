@@ -53,6 +53,7 @@ createApp({
                 },
                 body: JSON.stringify(this.form),
             });
+            alert('Registro Exitoso!')
         }
     },
     mounted() {
